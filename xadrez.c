@@ -1,28 +1,47 @@
 #include <stdio.h>
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    int b, t, r, peca;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+printf("***Escolha uma das peças abaixo***\n");
+printf("1- Bispo\n");
+printf("2- Torre\n");
+printf("3- Rainha\n");
+printf("Digite sua escolha:\n");
+scanf("%d", &peca);
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+switch (peca)
+{
+case 1:
+    printf("Peça: Bispo");
+for (b = 1; b <= 5; b++)
+{
+    printf("Superior-Direita\n");
+}
+    break;
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+case 2:
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+printf("Peça: Torre\n");
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+for(t= 1; t <= 5; t++)
+{
+    printf("Direita\n");
+}
+break;
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+case 3:
+printf("Peça: Rainha\n");
+for (r = 1; r<=8; r++)
+{
+    printf("Esquerda\n");
+}
 
+break;
+
+default:
+printf("Essa opção não existe!");
+    break;
+}
     return 0;
 }
