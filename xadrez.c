@@ -13,7 +13,7 @@ scanf("%d", &peca);
 switch (peca)
 {
 case 1:
-    printf("Peça: Bispo");
+    printf("Peça: Bispo\n");
 for (b = 1; b <= 5; b++)
 {
     printf("Superior-Direita\n");
@@ -40,7 +40,7 @@ for (r = 1; r<=8; r++)
 break;
 
 default:
-printf("Essa opção não existe!");
+printf("Essa opção não existe!\n");
     break;
 }
     return 0;
