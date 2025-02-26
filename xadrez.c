@@ -36,7 +36,6 @@ for (r = 1; r<=8; r++)
 {
     printf("Esquerda\n");
 }
-
 break;
 
 default:
