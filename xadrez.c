@@ -38,6 +38,18 @@ for (r = 1; r<=8; r++)
 }
 break;
 
+case 4:
+printf("Peça: Cavalo\n");
+int cc = 1;
+while ( cc--)
+{
+    for (c = 0; c <= 2; c++)
+    {
+        printf("Baixo\n");
+    }
+    printf("Esquerda\n");
+}
+
 default:
 printf("Essa opção não existe!\n");
     break;
